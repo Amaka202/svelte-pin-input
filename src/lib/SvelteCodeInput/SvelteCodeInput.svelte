@@ -8,10 +8,12 @@
 
   export let containerstyle; 
   export let inputStyle;
+  export let inputStyleInvalid;
 
   export let pattern;
   export let isInputHidden = true;
   export let disabled = false;
+  export let isValid = false;
   
 	let fields = [];
 
@@ -75,7 +77,7 @@
       on:keyup={handleChange}
       on:focus={(e) => e.target.select()}
       bind:value={field.value}
-      style="{inputStyle}"
+      style="{isValid ? inputStyle : inputStyleInvalid}"      
       on:paste={handlePaste}
       {disabled}
     />
@@ -92,7 +94,7 @@
       on:keyup={handleChange}
       on:focus={(e) => e.target.select()}
       bind:value={field.value}
-      style="{inputStyle}"
+      style="{isValid ? inputStyle : inputStyleInvalid}"
       on:paste={handlePaste}
       {disabled}
     />

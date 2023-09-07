@@ -1,18 +1,24 @@
 <script>
-	import CodeInput from "$lib/CodeInput/CodeInput.svelte";
+	import SvelteCodeInput from "$lib/SvelteCodeInput/SvelteCodeInput.svelte";
     
     let code = '';
 
-    const customStyle = "background-color: lightblue; color: red;";
+    const customStyle = `background-color: lightblue; 
+    text-align:center; color: black; width: 50px; height: 50px; border-radius: 10px; border: grey; margin-right: 10px`;
+
+    const customInvalidStyle = `background-color: pink; 
+    text-align:center; color: black; width: 50px; height: 50px; border-radius: 10px; border: grey; margin-right: 10px`;
 
 </script>
 
-<CodeInput 
-    size={8} 
-    isInputHidden={true}
-    inputType="number" 
-    inputStyle= "background-color: lightblue;padding: 20px;border: 1px solid red;"
-    containerstyle="background-color: #007bff;cursor: pointer;"
+<SvelteCodeInput 
+    size={5} 
+    isInputHidden={false}
+    inputType="mixed" 
+    inputStyle= {customStyle}
+    inputStyleInvalid={customInvalidStyle}
+    isValid={true}
+    containerstyle="display: flex"
     on:updateValue={(e) => (code = e.detail.value)} 
 />
 

@@ -2,6 +2,7 @@
 	"name": "svelte-code-input",
 	"version": "1.0.0",
 	"description": "A Svelte component for entering verification/PIN codes",
+	"homepage": "https://github.com/Amaka202/Svelte-code-input",
 	"keywords": [
         "Svelte components",
         "Input",
@@ -59,5 +60,6 @@
 	},
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
-	"type": "module"
+	"type": "module",
+	"main": "dist/index.js"
 }

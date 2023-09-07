@@ -29,6 +29,12 @@ export interface CodeInputProps {
      * @default undefined
      */
 
+   inputStyleInvalid?: string; // Optional CSS styles for the input elements when isValid is false
+
+   /**
+     * @default undefined
+     */
+
   pattern?: RegExp; // Optional pattern for input validation
 
    /**
@@ -42,9 +48,16 @@ export interface CodeInputProps {
 
   disabled?: boolean; // Whether the input is disabled (default: false)
 
+
+   /**
+     * @default false
+     */
+
+   isValid?: boolean; // Whether the input is valid (default: false)
+
 }
 
-export default class CodeInput extends SvelteComponent<
+export default class SvelteCodeInput extends SvelteComponent<
   CodeInputProps,
   { updateValue: CustomEvent<{ value: string }> }, // Define the updateValue event
   {}
