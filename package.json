@@ -1,8 +1,8 @@
 {
-	"name": "svelte-code-input",
+	"name": "svelte-pin-input",
 	"version": "1.0.0",
 	"description": "A Svelte component for entering verification/PIN codes",
-	"homepage": "https://github.com/Amaka202/Svelte-code-input",
+	"homepage": "https://github.com/Amaka202/svelte-pin-input",
 	"keywords": [
         "Svelte components",
         "Input",
@@ -11,7 +11,7 @@
     ],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Amaka202/Svelte-code-input.git"
+		"url": "git+https://github.com/Amaka202/svelte-pin-input.git"
 	  },
 	"author": "Chiamaka Umeh",
   	"license": "MIT",

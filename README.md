@@ -2,6 +2,8 @@
 
 A Svelte component for entering verification/PIN codes.
 
+[![npm version](https://img.icons8.com/color/48/npm.png)](https://www.npmjs.com/package/svelte-pin-input)
+
 ## Installation:
 
 `npm install svelte-pin-input`
