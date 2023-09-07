@@ -1,6 +1,19 @@
 {
 	"name": "svelte-code-input",
-	"version": "0.0.1",
+	"version": "1.0.0",
+	"description": "A Svelte component for entering verification/PIN codes",
+	"keywords": [
+        "Svelte components",
+        "Input",
+        "Svelte",
+        "SvelteKit"
+    ],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Amaka202/Svelte-code-input.git"
+	  },
+	"author": "Chiamaka Umeh",
+  	"license": "MIT",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",

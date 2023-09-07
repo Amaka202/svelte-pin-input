@@ -6,7 +6,7 @@
 	export let size = 4;
   export let inputType = 'text'; 
 
-  export let containerstyle;
+  export let containerstyle; 
   export let inputStyle;
 
   export let pattern;

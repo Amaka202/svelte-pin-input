@@ -1,58 +1,55 @@
-# create-svelte
+## svelte-code-input
 
-Everything you need to build a Svelte library, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+A Svelte component for entering verification/PIN codes.
 
-Read more about creating a library [in the docs](https://kit.svelte.dev/docs/packaging).
+## Installation:
 
-## Creating a project
+`npm install svelte-code-input`
 
-If you're seeing this, you've probably already done this step. Congrats!
+or
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+`yarn add svelte-code-input`
 
-# create a new project in my-app
-npm create svelte@latest my-app
+## Usage:
+
+**Add `SvelteCodeInput` to your component like this:**
+
+```
+<script>
+	import CodeInput from "$lib/CodeInput/CodeInput.svelte";
+
+    let code = '';
+
+    const customStyle = "background-color: lightblue; color: red;";
+
+</script>
+
+<CodeInput
+    size={8}
+    isInputHidden={true}
+    inputType="number"
+    inputStyle= "background-color: lightblue;padding: 20px;border: 1px solid red;"
+    containerstyle="background-color: #007bff;cursor: pointer;"
+    on:updateValue={(e) => (code = e.detail.value)}
+/>
+
 ```
 
-## Developing
+## Props
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Common props you may want to specify include:
 
-```bash
-npm run dev
+| Prop Name      | Initial Value | Type                            | Description                                       |
+| -------------- | ------------- | ------------------------------- | ------------------------------------------------- |
+| size           | 6             | `number`                        | The size of the input fields.                     |
+| inputType      | `'text'`      | `'text' \| 'number' \| 'mixed'` | The type of input ('text', 'number', or 'mixed'). |
+| containerstyle | `undefined`   | `string` (optional)             | Optional CSS styles for the container.            |
+| inputStyle     | `undefined`   | `string` (optional)             | Optional CSS styles for the input elements.       |
+| pattern        | `undefined`   | `RegExp` (optional)             | Optional pattern for input validation.            |
+| isInputHidden  | `true`        | `boolean`                       | Whether the input is hidden (default: `true`).    |
+| disabled       | `false`       | `boolean`                       | Whether the input is disabled (default: `false`). |
+| isValid        | `true`        | `boolean`                       | Whether the input is valid (default: `true`).     |
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+## License
 
-Everything inside `src/lib` is part of your library, everything inside `src/routes` can be used as a showcase or preview app.
-
-## Building
-
-To build your library:
-
-```bash
-npm run package
-```
-
-To create a production version of your showcase app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
-
-## Publishing
-
-Go into the `package.json` and give your package the desired name through the `"name"` option. Also consider adding a `"license"` field and point it to a `LICENSE` file which you can create from a template (one popular option is the [MIT license](https://opensource.org/license/mit/)).
-
-To publish your library to [npm](https://www.npmjs.com):
-
-```bash
-npm publish
-```
+MIT Licensed. Copyright (c) Chiamaka Umeh 2023.

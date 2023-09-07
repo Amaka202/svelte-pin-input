@@ -12,7 +12,6 @@
     isInputHidden={true}
     inputType="number" 
     inputStyle= "background-color: lightblue;padding: 20px;border: 1px solid red;"
-    inputStyleInvalid="background-color: lightblue;padding: 20px;border: 1px solid pink;"
     containerstyle="background-color: #007bff;cursor: pointer;"
     on:updateValue={(e) => (code = e.detail.value)} 
 />
