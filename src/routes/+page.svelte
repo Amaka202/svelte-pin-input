@@ -1,5 +1,5 @@
 <script>
-	import SvelteCodeInput from "$lib/SvelteCodeInput/SvelteCodeInput.svelte";
+	import SveltePinInput from "$lib/SveltePinInput/SveltePinInput.svelte";
     
     let code = '';
 
@@ -11,7 +11,7 @@
 
 </script>
 
-<SvelteCodeInput 
+<SveltePinInput 
     size={5} 
     isInputHidden={false}
     inputType="mixed" 

@@ -1,7 +1,7 @@
 /// <reference types="svelte" />
 import type { SvelteComponent } from "svelte";
 
-export interface CodeInputProps {
+export interface SveltePinInputProps {
      /**
      * @default 4
      */
@@ -57,8 +57,8 @@ export interface CodeInputProps {
 
 }
 
-export default class SvelteCodeInput extends SvelteComponent<
-  CodeInputProps,
+export default class SveltePinInput extends SvelteComponent<
+SveltePinInputProps,
   { updateValue: CustomEvent<{ value: string }> }, // Define the updateValue event
   {}
 > {}

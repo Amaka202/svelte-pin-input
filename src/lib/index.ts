@@ -1,3 +1,3 @@
-import SvelteCodeInput from "./SvelteCodeInput/SvelteCodeInput.svelte";
+import SveltePinInput from "./SveltePinInput/SveltePinInput.svelte";
 
-export default SvelteCodeInput;
+export default SveltePinInput;

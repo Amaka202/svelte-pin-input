@@ -1,18 +1,18 @@
-## svelte-code-input
+## svelte-pin-input
 
 A Svelte component for entering verification/PIN codes.
 
 ## Installation:
 
-`npm install svelte-code-input`
+`npm install svelte-pin-input`
 
 or
 
-`yarn add svelte-code-input`
+`yarn add svelte-pin-input`
 
 ## Usage:
 
-**Use `SvelteCodeInput` in your component like this:**
+**Use `SveltePinInput` in your component like this:**
 
 Initialize a variable to hold the inputed code and set up an event listener for the `updateValue` event to keep track of the user's input.
 
@@ -24,7 +24,7 @@ Initialize a variable to hold the inputed code and set up an event listener for 
 
 ```
 <script>
-	import SvelteCodeInput from "svelte-code-input";
+	import SveltePinInput from "svelte-pin-input";
 
     let code = '';
 
@@ -36,7 +36,7 @@ Initialize a variable to hold the inputed code and set up an event listener for 
 
 </script>
 
-<SvelteCodeInput
+<SveltePinInput
     size={5}
     isInputHidden={false}
     inputType="mixed"
