@@ -1,5 +1,5 @@
 <script>
-	import SveltePinInput from "$lib/SveltePinInput/SveltePinInput.svelte";
+	import SveltePinInput from "svelte-pin-input";
     
     let code = '';
 

@@ -1,20 +1,20 @@
 {
 	"name": "svelte-pin-input",
-	"version": "1.0.0",
+	"version": "1.0.2",
 	"description": "A Svelte component for entering verification/PIN codes",
 	"homepage": "https://github.com/Amaka202/svelte-pin-input",
 	"keywords": [
-        "Svelte components",
-        "Input",
-        "Svelte",
-        "SvelteKit"
-    ],
+		"Svelte components",
+		"Input",
+		"Svelte",
+		"SvelteKit"
+	],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/Amaka202/svelte-pin-input.git"
-	  },
+	},
 	"author": "Chiamaka Umeh",
-  	"license": "MIT",
+	"license": "MIT",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -26,6 +26,10 @@
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write ."
 	},
+	"main": "./dist/index.js",
+	"svelte": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"type": "module",
 	"exports": {
 		".": {
 			"types": "./dist/index.d.ts",
@@ -57,9 +61,5 @@
 		"tslib": "^2.4.1",
 		"typescript": "^5.0.0",
 		"vite": "^4.4.2"
-	},
-	"svelte": "./dist/index.js",
-	"types": "./dist/index.d.ts",
-	"type": "module",
-	"main": "dist/index.js"
+	}
 }
